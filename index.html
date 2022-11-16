@@ -528,7 +528,7 @@
     <!-- Pie de página -->
 
     <footer class="footer-container">
-      <div class="container">
+      <div class="container footer-flex">
         <div class="footer-container1">
           <a class="logo" href="/">WebStudio</a>
           <address class="add">
@@ -588,17 +588,32 @@
             </svg>
           </a>
         </div>
+
+        <form name="suscription">
+          <div class="subscript">
+            <label class="subscript-title" for="user-email"
+              >Suscríbase al boletín informativo
+            </label>
+            <div class="subscript-input">
+              <input
+                class="subscript-email"
+                type="email"
+                name="email"
+                id="user-email"
+                placeholder="Correo electrónico"
+                required
+              />
+
+              <button class="subscript-button" type="submit">
+                <span class="subscript-button-title">Suscríbase</span>
+                <svg class="subscript-button-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-enviar"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
-      <form name="suscription">
-        <label for="user-email">Suscríbase al boletín informativo</label>
-        <input
-          type="email"
-          name="email"
-          id="user-email"
-          placeholder="Correo electrónico"
-        />
-        <button type="submit">Suscríbase</button>
-      </form>
     </footer>
     <script src="./JS/modal.js"></script>
   </body>
